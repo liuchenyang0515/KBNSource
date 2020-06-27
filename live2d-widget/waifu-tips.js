@@ -5,6 +5,7 @@
 const myVersion = "v0.1.3"; // 加不加v都可以访问
 function loadWidget(config) {
 	let { waifuPath, apiPath, cdnPath } = config;
+	console.log("c:"+cdnPath);
 	let useCDN = false, modelList;
 	if (typeof cdnPath === "string") {
 		useCDN = true;
