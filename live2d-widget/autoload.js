@@ -1,4 +1,6 @@
 // 注意：live2d_path 参数应使用绝对路径
+
+// 本文件作为参考，调用方才修改
 const live2d_path = "https://cdn.jsdelivr.net/gh/liuchenyang0515/KBNSource@latest/";
 // const live2d_path = window.location.protocol + "//" + window.location.host + "/";
 // ======小人右边的可点击按钮

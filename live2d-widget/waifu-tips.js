@@ -2,10 +2,9 @@
  * Live2D Widget
  * https://github.com/stevenjoezhang/live2d-widget
  */
-const myVersion = "v0.1.3"; // 加不加v都可以访问
+
 function loadWidget(config) {
 	let { waifuPath, apiPath, cdnPath } = config;
-	console.log("c:"+cdnPath);
 	let useCDN = false, modelList;
 	if (typeof cdnPath === "string") {
 		useCDN = true;
@@ -66,8 +65,8 @@ function loadWidget(config) {
 				window.ASTEROIDSPLAYERS.push(new Asteroids());
 			} else {
 				let script = document.createElement("script");
-				script.src = "https://cdn.jsdelivr.net/gh/liuchenyang0515/KBNSource@" + myVersion + "/live2d-widget/asteroids.js";
-				console.log("===test");
+				script.src = "./asteroids.js";
+				console.log("相对路径测试");
 				document.head.appendChild(script);
 			}
 		});
