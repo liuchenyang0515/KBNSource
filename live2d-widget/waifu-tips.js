@@ -2,7 +2,7 @@
  * Live2D Widget
  * https://github.com/stevenjoezhang/live2d-widget
  */
-
+const myVersion = "v0.1.3"; // 加不加v都可以访问
 function loadWidget(config) {
 	let { waifuPath, apiPath, cdnPath } = config;
 	let useCDN = false, modelList;
@@ -65,7 +65,8 @@ function loadWidget(config) {
 				window.ASTEROIDSPLAYERS.push(new Asteroids());
 			} else {
 				let script = document.createElement("script");
-				script.src = "https://cdn.jsdelivr.net/gh/GalaxyMimi/CDN/asteroids.js";
+				script.src = "https://cdn.jsdelivr.net/gh/liuchenyang0515/KBNSource@" + myVersion + "/live2d-widget/asteroids.js";
+				console.log("===test");
 				document.head.appendChild(script);
 			}
 		});
