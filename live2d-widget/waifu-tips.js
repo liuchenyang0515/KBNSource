@@ -3,7 +3,7 @@
  * https://github.com/stevenjoezhang/live2d-widget
  */
 
-const myVersion = "v0.1.5"; // 加不加v都可以访问
+const myVersion = "v0.1.6"; // 加不加v都可以访问
 function loadWidget(config) {
 	let { waifuPath, apiPath, cdnPath } = config;
 	let useCDN = false, modelList;
