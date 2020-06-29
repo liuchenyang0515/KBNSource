@@ -7,7 +7,7 @@
 	font-size: 12px;
 	right: 0;
 	margin-right: -100px;
-	padding: 5px 5px 5px 2px;
+	padding: 5px 7px 5px 2px;
 	position: fixed;
 	transition: margin-right 1s;
 	width: 60px;
@@ -31,7 +31,8 @@
 	transform: translateY(3px);
 	transition: transform .3s ease-in-out, bottom 3s ease-in-out;
 	z-index: 1000;
-	opacity: 0.5;
+	opacity: 0.2;
+	pointer-events: none; /*不可点击，看起来是背景*/
 }
 
 #waifu:hover {
@@ -69,9 +70,9 @@
 
 #waifu #live2d {
 	cursor: grab;
-	height: 300px;
+	height: 600px;
 	position: relative;
-	width: 300px;
+	width: 600px;
 }
 
 #waifu #live2d:active {
@@ -85,6 +86,7 @@
 	right: -10px;
 	top: 70px;
 	transition: opacity 1s;
+	pointer-events: none; /*准备透明背景，这个tool不要显示*/
 }
 
 #waifu:hover #waifu-tool {
