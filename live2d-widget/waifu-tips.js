@@ -3,7 +3,7 @@
  * https://github.com/stevenjoezhang/live2d-widget
  */
 
-const myVersion = "v0.1.9"; // 加不加v都可以访问
+const myVersion = "v0.2.0"; // 每次提交都修改这里，方便观察和生成tags访问，加不加v都可以访问
 function loadWidget(config) {
 	let { waifuPath, apiPath, cdnPath } = config;
 	let useCDN = false, modelList;
