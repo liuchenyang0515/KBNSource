@@ -31,7 +31,6 @@
 	transform: translateY(3px);
 	transition: transform .3s ease-in-out, bottom 3s ease-in-out;
 	z-index: 1000;
-	opacity: 0.2;
 	pointer-events: none; /*不可点击，看起来是背景*/
 }
 
@@ -73,6 +72,7 @@
 	height: 400px;
 	position: relative;
 	width: 400px;
+	opacity: 0.2;
 }
 
 #waifu #live2d:active {
